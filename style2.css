@@ -1,0 +1,40 @@
+/* 
+  Style2.css - Reference for Background Styles
+  Use this file to copy/paste the background gradient and decoration styles.
+*/
+
+/* Main Background Gradient */
+.bg-soft {
+    background:
+        radial-gradient(120% 55% at 8% 10%,
+            rgba(255, 140, 140, .55) 0%,
+            rgba(255, 140, 140, .20) 38%,
+            rgba(255, 140, 140, 0) 70%),
+        radial-gradient(120% 55% at 10% 92%,
+            rgba(255, 150, 150, .50) 0%,
+            rgba(255, 150, 150, .18) 40%,
+            rgba(255, 150, 150, 0) 72%),
+        radial-gradient(90% 75% at 92% 55%,
+            rgba(255, 180, 205, .45) 0%,
+            rgba(255, 180, 205, .20) 40%,
+            rgba(255, 180, 205, 0) 72%),
+        linear-gradient(180deg,
+            #FFE9E4 0%,
+            #FFD7DA 45%,
+            #FFEDE7 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Background Hearts Decoration */
+.bg-decoration {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.6;
+    mix-blend-mode: multiply;
+}

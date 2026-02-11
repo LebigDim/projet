@@ -187,7 +187,8 @@
     align-items: center;
     width: 85%;
     height: 72px;
-    margin: 0 auto 10px;
+    margin: 0 auto 20px;
+    /* Increased from 10px to avoid home indicator overlap */
     box-shadow: 0 8px 32px rgba(255, 154, 158, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.3);
     z-index: 10;

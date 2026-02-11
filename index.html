@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mobile App Frame</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index-style.css">
 </head>
 
 <body>
@@ -34,15 +35,45 @@
             <h1 class="page-title">Accueil</h1>
             <div class="header-actions">
               <button class="icon-btn"><i class="fa-solid fa-bell"></i></button>
-              <button class="icon-btn"><i class="fa-solid fa-bars"></i></button>
+              <button class="icon-btn" id="btn-profile"><i class="fa-solid fa-bars"></i></button>
               <div class="user-avatar">
                 <i class="fa-regular fa-user"></i>
               </div>
             </div>
           </header>
 
+          <!-- Profile Menu Overlay -->
+          <div id="profile-menu" class="profile-menu" aria-hidden="true">
+            <button class="btn-back" id="btn-profile-back">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+            <div class="profile-header">
+              <div class="profile-avatar-large">
+                <i class="fa-regular fa-user"></i>
+              </div>
+              <h2 class="profile-name">Jeffrey Epstein</h2>
+              <p class="profile-level">Level: +100(PRO)</p>
+              <div class="profile-score">
+                <span>Score:</span> <span>🏝️ 5K</span>
+              </div>
+            </div>
+
+            <nav class="profile-nav">
+              <a href="#" class="profile-link">Accueil</a>
+              <a href="#" class="profile-link">Jeu <i class="fa-solid fa-chevron-right"></i></a>
+              <a href="#" class="profile-link">Profil</a>
+              <a href="#" class="profile-link">À propos de nous</a>
+            </nav>
+
+            <div class="profile-footer">
+              Version 0.1
+            </div>
+          </div>
+
           <!-- Background Decoration -->
           <img class="bg-decoration" src="images/hearts.png" alt="" aria-hidden="true">
+          <img class="bg-decoration bg-bottom" src="images/hearts.png" alt="" aria-hidden="true">
 
           <!-- Greeting Section -->
           <div class="greeting-section">
@@ -87,7 +118,7 @@
               </div>
             </button>
             <button class="nav-item">
-              <i class="fa-solid fa-umbrella-beach"></i>
+              <img src="images/parasol-replacement.png" alt="Parasol" style="width: 24px; height: 24px;">
             </button>
             <button class="nav-item">
               <i class="fa-regular fa-circle-user"></i>

@@ -18,10 +18,34 @@
                 </div>
                 <img class="info-up" src="images/info up.png" alt="Device info">
 
-                <!-- Old App Structure with specific class for styling -->
+                <!-- Fonts -->
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link
+                    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+                    rel="stylesheet">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
                 <section class="app app-intro" role="main" aria-label="Welcome screen">
-                    <h1 class="title-intro">Love Island</h1>
-                    <button class="cta-intro" onclick="window.location.href='index.html'">Commencer</button>
+                    <!-- Scattered Background Hearts -->
+                    <img class="bg-decoration" src="images/hearts.png" alt="" aria-hidden="true" style="z-index: 0;">
+                    <img class="bg-decoration bg-bottom" src="images/hearts.png" alt="" aria-hidden="true"
+                        style="z-index: 0;">
+
+                    <!-- Decorative Background Elements -->
+                    <img src="images/big-heart.png" class="intro-heart" alt="" aria-hidden="true">
+                    <img src="images/island-map.png" class="intro-map" alt="" aria-hidden="true">
+
+                    <div class="intro-deco-text text-love">Love</div>
+                    <div class="intro-deco-text text-island">Island</div>
+
+                    <!-- Main Title -->
+                    <h1 class="intro-main-title">Love Island</h1>
+
+                    <!-- CTA -->
+                    <button class="cta-intro" onclick="window.location.href='index.html'">
+                        Commencer <i class="fa-solid fa-arrow-right"></i>
+                    </button>
                 </section>
 
                 <img class="home-indicator" src="images/Line downe.png" alt="Home indicator">

@@ -92,56 +92,7 @@ body {
   color: #1a1a1a;
 }
 
-/* Header */
-.app-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 24px;
-}
 
-.page-title {
-  font-family: 'Inter', sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  margin: 0;
-  letter-spacing: -0.5px;
-}
-
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.icon-btn {
-  background: none;
-  border: none;
-  font-size: 20px;
-  color: #1a1a1a;
-  cursor: pointer;
-  padding: 0;
-}
-
-.user-avatar {
-  width: 36px;
-  height: 36px;
-  background: #555;
-  /* Placeholder gray */
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 18px;
-  overflow: hidden;
-}
-
-.user-avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 /* Background Decoration */
 .bg-decoration {
@@ -157,173 +108,17 @@ body {
   /* Helps blend the hearts nicely */
 }
 
-/* Greeting Section */
-.greeting-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  position: relative;
-  z-index: 2;
-  /* Ensure greeting is above hearts */
-  width: 100%;
+.bg-bottom {
+  top: auto;
+  bottom: 0;
+  transform: scaleY(-1);
+  /* Flip specifically the hearts image */
+  opacity: 0.5;
 }
 
-.greeting-text h2 {
-  font-family: 'Inter', sans-serif;
-  font-size: 26px;
-  /* Slightly larger */
-  margin: 0;
-  font-weight: 600;
-  letter-spacing: -0.5px;
-}
 
-.greeting-text .highlight {
-  color: #ff2a55;
-  font-weight: 800;
-}
 
-.greeting-text p {
-  margin: 6px 0 0;
-  font-size: 17px;
-  color: #1a1a1a;
-  /* Darker text */
-  font-weight: 500;
-  display: inline-block;
-}
 
-.badge-pill {
-  background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(10px);
-  padding: 6px 14px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-}
-
-.badge-text {
-  font-weight: 700;
-  font-size: 16px;
-}
-
-/* Carousel */
-.carousel-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  /* Increased gap */
-  height: 420px;
-  /* Taller area */
-  width: 100%;
-  margin-bottom: 10px;
-  perspective: 1000px;
-  position: relative;
-  z-index: 5;
-}
-
-.card {
-  border-radius: 40px;
-  overflow: hidden;
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, filter 0.3s ease;
-  position: relative;
-}
-
-.card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.card-center {
-  width: 250px;
-  height: 380px;
-  z-index: 10;
-  border-radius: 120px;
-  /* Very rounded pill shape for center */
-}
-
-.card-left,
-.card-right {
-  width: 120px;
-  height: 280px;
-  border-radius: 60px;
-  /* Pill shape */
-  filter: brightness(0.6);
-  /* Darker side cards */
-  z-index: 5;
-}
-
-.card-left img,
-.card-right img {
-  /* crop to center nicely */
-  object-position: center top;
-}
-
-/* Slogan */
-.slogan-container {
-  text-align: center;
-  margin-bottom: auto;
-  position: relative;
-  z-index: 2;
-}
-
-.slogan-text {
-  font-family: 'Great Vibes', cursive;
-  font-size: 24px;
-  color: #ff5e78;
-  /* Softer pink */
-  margin: 0;
-}
-
-/* Bottom Nav */
-.bottom-nav {
-  background: rgba(255, 255, 255, 0.45);
-  backdrop-filter: blur(25px);
-  -webkit-backdrop-filter: blur(25px);
-  border-radius: 35px;
-  padding: 8px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 85%;
-  height: 72px;
-  margin: 0 auto 10px;
-  box-shadow: 0 8px 32px rgba(255, 154, 158, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  z-index: 10;
-}
-
-.nav-item {
-  background: none;
-  border: none;
-  font-size: 24px;
-  color: white;
-  /* default icon color */
-  cursor: pointer;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav-item.active .nav-icon-bg {
-  background: white;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #ff9a9e;
-  /* Active icon color */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
 
 /* Override existing status live position if needed, or keep it */
 .status-live {
@@ -338,35 +133,105 @@ body {
   letter-spacing: 0.2px;
 }
 
-/* --- Intro Page Styles (Restored) --- */
+/* --- Intro Page Styles (Refined) --- */
 .app-intro {
-  display: grid;
-  place-items: center;
-  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding-top: 0;
-  /* Override new app padding */
+  padding: 0;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
 }
 
-.title-intro {
-  font-family: ui-serif, Georgia, Times, "Times New Roman", serif;
-  font-size: clamp(26px, 6vw, 42px);
-  font-weight: 400;
-  color: #231819;
-  margin-bottom: 24px;
+/* Decorative Images */
+.intro-heart {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 45%;
+  opacity: 0.8;
+  z-index: 1;
 }
 
+.intro-map {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  opacity: 0.6;
+  z-index: 2;
+}
+
+/* Decorative Text */
+.intro-deco-text {
+  font-family: 'Great Vibes', cursive;
+  color: rgba(231, 142, 155, 0.4);
+  /* Subtle pinkish text */
+  position: absolute;
+  z-index: 2;
+  font-size: 64px;
+  pointer-events: none;
+}
+
+.text-love {
+  top: 28%;
+  right: 10%;
+  transform: rotate(-10deg);
+}
+
+.text-island {
+  bottom: 25%;
+  left: 5%;
+  transform: rotate(-5deg);
+}
+
+/* Main Title */
+.intro-main-title {
+  font-family: 'Great Vibes', cursive;
+  /* Using script font for main title based on mockup look */
+  font-size: 58px;
+  color: #1a1a1a;
+  margin: 0;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+/* CTA Button */
 .cta-intro {
-  padding: 12px 24px;
+  position: absolute;
+  bottom: 15%;
+  padding: 14px 28px;
   border: 0;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.85);
+  border-radius: 30px;
+  /* More rounded */
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
   color: #1f0f10;
+  font-family: 'Outfit', sans-serif;
   font-weight: 600;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   cursor: pointer;
   font-size: 16px;
-  transition: transform 0.2s;
+  transition: all 0.2s ease;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.cta-intro:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transform: translateY(-2px);
 }
 
 .cta-intro:active {

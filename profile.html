@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Island - Profil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile-style.css">
+    <link rel="stylesheet" href="index-style.css">
+</head>
+
+<body>
+    <main class="canvas">
+        <div class="device" aria-label="Mobile device frame">
+            <div class="screen bg-soft">
+                <div class="island" aria-hidden="true"></div>
+                <div class="status-live" aria-label="Status bar">
+                    <span id="clock" aria-live="polite"></span>
+                </div>
+                <img class="info-up" src="images/info up.png" alt="Device info">
+
+                <!-- Google Fonts -->
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link
+                    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+                    rel="stylesheet">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+                <section class="app profile-page" role="main" aria-label="Profile section">
+
+                    <header class="app-header">
+                        <h1 class="page-title">Profil</h1>
+                        <div class="header-actions">
+                            <button class="icon-btn"><i class="fa-solid fa-bell"></i></button>
+                            <button class="icon-btn" id="btn-profile"><i class="fa-solid fa-bars"></i></button>
+                            <div class="user-avatar mini-avatar">
+                                <i class="fa-regular fa-user"></i>
+                            </div>
+                        </div>
+                    </header>
+
+                    <img class="bg-decoration" src="images/hearts.png" alt="" aria-hidden="true">
+
+                    <div class="profile-main">
+                        <div class="profile-top-card">
+                            <div class="avatar-container">
+                                <div class="avatar-large">
+                                    <i class="fa-regular fa-user"></i>
+                                </div>
+                            </div>
+                            <div class="card-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+
+                        <div class="user-details">
+                            <h2 class="user-name">Jeffrey Epstein</h2>
+                            <p class="user-stats">Level: <span class="highlight-red">+100</span> <span
+                                    class="gray-text">(PRO)</span></p>
+                            <p class="user-stats">Score: <span class="score-pill">🏝️ 5K</span></p>
+                        </div>
+
+                        <div class="bio-section">
+                            <h3>Biographie</h3>
+                            <p>CouCou!<br>Je suis ici pour mettre à l'épreuve mes compétences cognitives et mes
+                                connaissances! 😉</p>
+                        </div>
+
+                        <div class="success-section">
+                            <h3>Succès</h3>
+                            <div class="success-grid">
+                                <span class="badge">Habitué</span>
+                                <span class="badge">Sans faute</span>
+                                <span class="badge">Passionné</span>
+                                <span class="badge">Survivant</span>
+                                <span class="badge">Chrono killer</span>
+                                <span class="badge">Fidèle</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="profile-menu" class="profile-menu" aria-hidden="true">
+                        <button class="btn-back" id="btn-profile-back">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        <nav class="profile-nav">
+                            <a href="index.html" class="profile-link">Accueil</a>
+                            <a href="#" class="profile-link">Jeu <i class="fa-solid fa-chevron-right"></i></a>
+                            <a href="profile.html" class="profile-link">Profil</a>
+                            <a href="#" class="profile-link">À propos de nous</a>
+                        </nav>
+                        <div class="profile-footer">
+                            Version 0.1
+                        </div>
+                    </div>
+
+                    <nav class="bottom-nav">
+                        <button class="nav-item" onclick="window.location.href='index.html'">
+                            <i class="fa-solid fa-house"></i>
+                        </button>
+                        <button class="nav-item">
+                            <img src="images/parasol-replacement.png" alt="Parasol" style="width: 24px; height: 24px;">
+                        </button>
+                        <button class="nav-item active">
+                            <div class="nav-icon-bg">
+                                <i class="fa-regular fa-circle-user"></i>
+                            </div>
+                        </button>
+                    </nav>
+
+                </section>
+
+                <img class="home-indicator" src="images/Line downe.png" alt="Home indicator">
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

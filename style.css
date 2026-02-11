@@ -84,7 +84,8 @@ body {
 .app {
   position: absolute;
   inset: 0;
-  padding: 60px 24px 34px;
+  padding: 60px 24px 60px;
+  /* Increased bottom padding from 34px to 60px */
   display: flex;
   flex-direction: column;
   z-index: 1;
